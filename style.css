@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 20vh;  
+    justify-content: space-between;
+    
+}
+
+
+
+#txtP{
+    margin-top: 40px;
+}
+
+.firstM{
+    width: 25%;
+}
+
+.endM{
+    height: 100px;
+    width: 25%; 
+}
+
+
+#logo{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+#ttlmain{
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.txtbox{
+    margin-top: 5px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(110, 2, 160);
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.txtbox:first-child{
+    margin-left: 15px;
+}
+
+.txtbox:not(:nth-child(2)){
+    margin-top: 25px;
+}
+
+.divisor{
+    width:100vw;
+    height: 1px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#divisor{
+    background-color: white;
+    border-radius: 4px;
+    width: 40%;
+    height: 1px;
+    opacity: 0.2;
+}
+
+@media screen and (max-width:728px) {
+    
+    .container{
+        flex-direction: column;
+    }
+    
+    .txtbox{
+        width: 100%;
+    }
+    .txtbox:not(:first-child){
+        margin-top: 25px;
+    }
+}
