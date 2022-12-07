@@ -7,6 +7,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 17px;
+    margin-top: 15px;
 }
 
 .menu{
@@ -18,12 +25,6 @@
     
 }
 
-
-
-#txtP{
-    margin-top: 40px;
-}
-
 .firstM{
     width: 25%;
 }
@@ -31,28 +32,6 @@
 .endM{
     height: 100px;
     width: 25%; 
-}
-
-
-#logo{
-    width: 100px;
-    height: 100px;
-    
-}
-
-.container{
-    width: 100vw;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-}
-
-#ttlmain{
-    text-align: center;
-    font-size: 25px;
-    flex-direction: column;
-    margin-bottom: 10px;
 }
 .txtbox{
     margin-top: 5px;
@@ -74,21 +53,61 @@
     margin-top: 25px;
 }
 
+
+
 .divisor{
     width:100vw;
     height: 1px;
-    margin-top: 15px;
+    margin-top: 70px;
+    margin-bottom: 35px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+.container{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.container2{
+    width: 100%;
+    height: auto;
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
+}
 
-#divisor{
+
+#txtP{
+    margin-top: 40px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;   
+}
+
+.ttlmain{
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.divisorE{
     background-color: white;
     border-radius: 4px;
-    width: 40%;
+    width: 70%;
     height: 1px;
     opacity: 0.2;
+}
+
+#metas{
+    width:300px;
+    height:300px;
+   
 }
 
 @media screen and (max-width:728px) {
@@ -98,9 +117,23 @@
     }
     
     .txtbox{
-        width: 100%;
+        width: 100vw;
     }
     .txtbox:not(:first-child){
         margin-top: 25px;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container2, ul, li{
+        text-align: center;
+    }
+
+    .divisor:nth-child(2){
+       margin-top: 0;
     }
 }
