@@ -76,15 +76,14 @@ ul{
     display: flex;
 }
 
-
-#txtP{
-    margin-top: 40px;
+.container3{
+    width: 100%;
+    height: auto;
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
 }
 
-#logo{
-    width: 100px;
-    height: 100px;   
-}
 
 .ttlmain{
     text-align: center;
@@ -101,10 +100,96 @@ ul{
     opacity: 0.2;
 }
 
+.pImage{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 50%;
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+.pImageLink{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 50%;
+}
+
+.pImageLink:hover{
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.imgTxt{
+    text-align : center;
+    margin: 0px 10px 0px 20px;
+    width: 100%;
+}
+
+.imgTxtResponsive{
+    display: none;
+}
+
+.cardContact{
+    flex-direction: column;
+    border: 1px solid rgb(110, 2, 160); 
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cardContact img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.cardContact h3{
+    margin-bottom: 7px;
+}
+
+.cardContact:link{
+    text-decoration: none;
+}
+
+.cardContact:active{
+    text-decoration: none;
+    color: white;
+}
+
+.cardContact:hover{
+    transition: 1s;
+    border-color: rgb(70, 2, 160) ;
+}
+
+
+#txtP{
+    margin-top: 40px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;   
+}
+
+
 #metas{
     width:300px;
     height:300px;
    
+}
+
+#projectSec{
+    width: 85%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:728px) {
@@ -114,7 +199,8 @@ ul{
     }
     
     .txtbox{
-        width: 100vw;
+        width: 95vw;
+
     }
     .txtbox:not(:first-child){
         margin-top: 25px;
@@ -130,4 +216,58 @@ ul{
         display: none;
     }
 
+    .container2 ul{
+        margin-left: 5px;
+    }
+
+    .container3{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projectSec{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pImage{
+        width: 80vw;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .pImageLink{
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .imgTxtResponsive{
+        text-align: center;
+        display: flex;
+        margin-bottom: 30px;
+        width: 95%;
+    }
+
+    .imgTxt{
+        display: none;
+        width: 0%;
+        margin-bottom: 0;
+    }
+
+    .cardContact{
+        width: 40%;
+        height: 50%;
+        padding: 6px;
+    }
+
+    .container:last-child{
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
