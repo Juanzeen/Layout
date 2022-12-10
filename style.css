@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: Poppins;
     overflow-x: hidden;
+    visibility: hidden;
 }
 
 ul{
@@ -192,6 +193,8 @@ ul{
     align-items: center;
 }
 
+
+
 @media screen and (max-width:728px) {
     
     .container{
@@ -265,7 +268,7 @@ ul{
         padding: 6px;
     }
 
-    .container:last-child{
+    #containerContato{
         display: flex;
         flex-direction: row;
     }

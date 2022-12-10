@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                 <li>Conquistar a confiança dos clientes por meio de resultados</li>
             </ul>
         
-            <img id="metas" src="./public/images/metas.png" alt="">
+            <img id="metas" src="./public/images/metas.png" alt="" loading="lazy">
         </div>
     </section>
 
@@ -79,7 +80,7 @@
                 que tem função totalmente informacional e com contato.
             </p>
             <div class="pImage">
-               <a href="https://juanzeen.github.io/ABM/" class="pImageLink"> <img src="./public/images/abmimage.jpeg" class="pImage" alt=""> </a>
+               <a href="https://juanzeen.github.io/ABM/" class="pImageLink"> <img src="./public/images/abmimage.jpeg" class="pImage" alt="" loading="lazy"> </a>
             </div>
             <p class="imgTxt">Página feita para apresentação de um dos membros da Layout, nela
                 é possível observar um modelo de site com alinhamento central e 
@@ -95,7 +96,7 @@
                 e filtro de busca na barra de pesquisa, além de possuir responsividade 
                 para aparelhos móveis (em desenvolvimento).</p>   
             <div class="pImage">
-                <a href="https://alura-react-murex.vercel.app/" class="pImageLink"><img class="pImage" src="./public/images/aluraimage.jpeg" alt=""></a>
+                <a href="https://alura-react-murex.vercel.app/" class="pImageLink"><img class="pImage" src="./public/images/aluraimage.jpeg" alt="" loading="lazy"></a>
             </div>   
             <p class="imgTxt">Página feita durante a execução de um curso 
                 sobre React. Possui elementos como implementação de modo escuro
@@ -112,7 +113,7 @@
                 de resultados após colocar sua empresa online.
             </p> 
             <div class="pImage">
-               <a href="http://bacofilmes.com.br/" class="pImageLink"> <img class="pImage" src="./public/images/bacoimage.jpeg" alt=""> </a>
+               <a href="http://bacofilmes.com.br/" class="pImageLink"> <img class="pImage" src="./public/images/bacoimage.jpeg" alt="" loading="lazy"> </a>
             </div> 
             <p class="imgTxt">Página feita para a empresa Baco Filmes,
                 esse foi um dos primeiros trabalhos profissionais da Layout e mostra
@@ -129,8 +130,8 @@
     <h3 class="ttlmain">Entre em contato</h3>
 
     <section id="contact">
-        <div class="container">
-            <a href="" class="cardContact">
+        <div class="container" id="containerContato">
+            <a href="https://www.instagram.com/juanzeenn/" class="cardContact">
             <div>
 
                     <img src="https://github.com/Juanzeen.png" alt="">
@@ -141,7 +142,7 @@
                 </div>
             </a>
 
-            <a href="" class="cardContact">
+            <a href="https://www.instagram.com/hugod_mt/" class="cardContact">
                 <div>
                     <img src="./public/images/hugoicon.jpeg" alt="">
                     <h3>Hugo</h3>
@@ -152,9 +153,20 @@
             </a>
 
         </div>
+<br>
+        <div class="container"> 
+                <a href="https://www.instagram.com/ahbiel_/" class="cardContact">
+                    <div>
+                        <img src="./public/images/angeloicon.jpeg" alt="">
+                        <h3>Angelo</h3>
+                        <p>Sócio da Layout e colíder da equipe de programação.</p>
+                    </div>
+                </a>
+        </div> 
 
     </section>
 
-        
+    <script src="./script.js"></script>    
+
 </body>
 </html>
